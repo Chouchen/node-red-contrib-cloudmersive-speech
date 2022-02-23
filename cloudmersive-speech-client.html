@@ -2,8 +2,10 @@
     RED.nodes.registerType('cloudmersive-speech-client',{
         category: 'config',
         defaults: {
-            name: {value: ""},
-            apiKey: {value: ""}
+            name: {value: ""}
+        },
+        credentials: {
+            apiKey: {type:"password"}
         },
         label: function() {
             return this.name || "Cloudmersive credentials";
@@ -18,7 +20,7 @@
     </div>
     <div class="form-row">
         <label for="node-config-input-apiKey"><i class="fa fa-lock"></i> API Key</label>
-        <input type="text" id="node-config-input-apiKey">
+        <input type="password" id="node-config-input-apiKey">
     </div>
 </script>
 
@@ -27,5 +29,5 @@
 
     <h3>About</h3>
     <p>Create an account and then a key in <a href="https://account.cloudmersive.com/keys">Cloudmersive</a></p>
-    
+
 </script>

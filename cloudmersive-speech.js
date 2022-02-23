@@ -20,7 +20,7 @@ module.exports = function(RED) {
           const creds = RED.nodes.getNode(n.creds);
             // Configure API key authorization: Apikey
             var Apikey = defaultClient.authentications['Apikey'];
-            Apikey.apiKey = creds.apiKey;
+            Apikey.apiKey = creds.credentials.apiKey;
 
             var api = new CloudmersiveSpeechApiClient.SpeakApi()
 
