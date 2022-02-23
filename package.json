@@ -1,39 +1,40 @@
 {
-    "name": "@shikiryu/node-red-contrib-cloudmersive-speech",
-    "version": "1.0.0",
-    "description": "NodeRED to generate wav or mp3 of a given string",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "predev": "npm i -g",
-        "dev": "node-red -v"
-    },
-    "author": "Clément Desmidt",
-    "contributors": [
-        "Clément Desmidt <projets@shiki.fr>"
-    ],
-    "keywords": [
-        "node-red",
-        "text2speech",
-        "cloudmersive"
-    ],
-    "license": "Apache-2.0",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Chouchen/node-red-contrib-cloudmersive-speech.git"
-    },
-    "dependencies": {
-        "cloudmersive-speech-api-client": "^1.1.6",
-        "uuid": "^8.3.2"
-    },
-    "node-red": {
-        "nodes": {
-            "cloudmersive-speech-client": "cloudmersive-speech-client.js",
-            "cloudmersive-speech": "cloudmersive-speech.js"
-        }
-    },
-    "bugs": {
-        "url": "https://github.com/Chouchen/node-red-contrib-cloudmersive-speech/issues"
-    },
-    "homepage": "https://github.com/Chouchen/node-red-contrib-cloudmersive-speech#readme"
+  "name": "@shikiryu/node-red-contrib-cloudmersive-speech",
+  "version": "1.0.0",
+  "description": "NodeRED to generate wav or mp3 of a given string",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predev": "npm i -g",
+    "dev": "node-red -v"
+  },
+  "author": "Clément Desmidt",
+  "contributors": [
+    "Clément Desmidt <projets@shiki.fr>"
+  ],
+  "keywords": [
+    "node-red",
+    "text2speech",
+    "cloudmersive"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chouchen/node-red-contrib-cloudmersive-speech.git"
+  },
+  "dependencies": {
+    "cloudmersive-speech-api-client": "^1.1.6",
+    "uuid": "^8.3.2"
+  },
+  "node-red": {
+    "nodes": {
+      "cloudmersive-speech-client": "cloudmersive-speech-client.js",
+      "cloudmersive-speech": "cloudmersive-speech.js"
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/Chouchen/node-red-contrib-cloudmersive-speech/issues"
+  },
+  "homepage": "https://github.com/Chouchen/node-red-contrib-cloudmersive-speech#readme",
+  "devDependencies": {}
 }
