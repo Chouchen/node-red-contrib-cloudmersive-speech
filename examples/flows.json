@@ -1,0 +1,74 @@
+[
+    {
+        "id": "7beeded767c307c6",
+        "type": "tab",
+        "label": "Cloudmersive TTS example",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4fd88dc7c0309347",
+        "type": "cloudmersive-speech",
+        "z": "7beeded767c307c6",
+        "name": "text2speech",
+        "creds": "b3e9d9359c75ccc9",
+        "path": "",
+        "format": "mp3",
+        "x": 420,
+        "y": 220,
+        "wires": [
+            [
+                "abde9017dfaa7175"
+            ]
+        ]
+    },
+    {
+        "id": "70d24712460798f8",
+        "type": "inject",
+        "z": "7beeded767c307c6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Custom edit behavior  The default behavior works in many cases, but sometimes it is necessary to define some node-specific behavior. For example, if a property cannot be properly edited as a simple <input> or <select>, or if the edit dialog content itself needs to have certain behaviors based on what options are selected.  A node definition can include two functions to customize the edit behavior.      oneditprepare is called immediately before the dialog is displayed.     oneditsave is called when the edit dialog is okayed.     oneditcancel is called when the edit dialog is canceled.     oneditdelete is called when the delete button in a configuration node’s edit dialog is pressed.     oneditresize is called when the edit dialog is resized.  For example, when the Inject node is configured to repeat, it stores the configuration as a cron-like string: 1,2 * * * *. The node defines an oneditprepare function that can parse that string and present a more user-friendly UI. It also has an oneditsave function that compiles the options chosen by the user back into the corresponding cron string.",
+        "payloadType": "str",
+        "x": 210,
+        "y": 220,
+        "wires": [
+            [
+                "4fd88dc7c0309347"
+            ]
+        ]
+    },
+    {
+        "id": "abde9017dfaa7175",
+        "type": "debug",
+        "z": "7beeded767c307c6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "b3e9d9359c75ccc9",
+        "type": "cloudmersive-speech-client",
+        "name": "shikiryu",
+        "credentials": {}
+    }
+]
