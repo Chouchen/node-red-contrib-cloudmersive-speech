@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    RED.nodes.registerType('cloudmersive-speech-client',{
+        category: 'config',
+        defaults: {
+            name: {value: ""},
+            apiKey: {value: ""}
+        },
+        label: function() {
+            return this.name || "Cloudmersive credentials";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="cloudmersive-speech-client">
+    <div class="form-row">
+        <label for="node-config-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-config-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-apiKey"><i class="fa fa-lock"></i> API Key</label>
+        <input type="text" id="node-config-input-apiKey">
+    </div>
+</script>
+
+<!-- Next, some simple help text is provided for the node.                   -->
+<script type="text/x-red" data-help-name="cloudmersive-speech-client">
+
+    <h3>About</h3>
+    <p>Create an account and then a key in <a href="https://account.cloudmersive.com/keys">Cloudmersive</a></p>
+    
+</script>
