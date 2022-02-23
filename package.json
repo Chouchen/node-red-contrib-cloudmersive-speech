@@ -1,6 +1,6 @@
 {
   "name": "@shikiryu/node-red-contrib-cloudmersive-speech",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NodeRED to generate wav or mp3 of a given string",
   "main": "index.js",
   "scripts": {
@@ -15,6 +15,7 @@
   "keywords": [
     "node-red",
     "text2speech",
+    "tts",
     "cloudmersive"
   ],
   "license": "Apache-2.0",
